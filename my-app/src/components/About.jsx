@@ -1,17 +1,15 @@
 import React from "react";
-import "./components/style/About.css";
+import "./style/About.css";
 
 // Sample data for team members
 const teamMembers = [
   {
-    name: "John Doe",
-    photo: "path_to_john_doe_photo.jpg", // Replace with actual path
+    name: "Mohammed Nahil Nasir",
     github: "https://github.com/johndoe",
     email: "johndoe@example.com",
   },
   {
-    name: "Jane Smith",
-    photo: "path_to_jane_smith_photo.jpg", // Replace with actual path
+    name: "Tapan KR",
     github: "https://github.com/janesmith",
     email: "janesmith@example.com",
   },
@@ -20,6 +18,7 @@ const teamMembers = [
 
 const About = () => {
   return (
+    <div className="page">
     <div className="about">
       <h1>About This App</h1>
       <p>
@@ -37,7 +36,6 @@ const About = () => {
       <div className="team">
         {teamMembers.map((member, index) => (
           <div key={index} className="team-member">
-            <img src={member.photo} alt={member.name} className="team-photo" />
             <h3>{member.name}</h3>
             <div className="socials">
               <a href={member.github} target="_blank" rel="noopener noreferrer" className="github">
@@ -50,6 +48,7 @@ const About = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };
