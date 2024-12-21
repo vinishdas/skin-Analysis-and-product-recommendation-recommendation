@@ -1,15 +1,21 @@
-import { useState } from 'react';
-import './App.css';
-import SkinAnalysisPage from './SkinAnalysisPage';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navebar";
+import Home from "./components/Home";
+import Analysis from "./components/Analysis";
+import About from "./components/About";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
-    <>
-      <SkinAnalysisPage />
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/analysis" element={<Analysis />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
