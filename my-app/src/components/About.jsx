@@ -6,8 +6,7 @@ const About = () => {
     <div className="about">
       <h1>About This App</h1>
       <p>
-       git hub 
-       people who work 
+        This is a full stack React app for keeping contacts. It uses JSON-Server
       </p>
     </div>
   );
