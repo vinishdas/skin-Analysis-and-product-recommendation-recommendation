@@ -29,7 +29,7 @@ const About = () => {
         By leveraging deep learning techniques, the project automates the process of analyzing skin health,
         offering potential applications in personalized skin care recommendations.
         The model is trained on a dataset of skin images and is designed to provide accurate predictions,
-        enabling users to monitor and improve their skin health with the help of advanced technology.
+        enabling users to monitor and improve their skin health with the help of advanced 
       </p>
 
       <h2>Meet The Team</h2>
