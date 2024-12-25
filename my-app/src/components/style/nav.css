@@ -1,5 +1,50 @@
-
-.navbar{
-    background-color: #f4f4f4;
-    color: #000000;
-}
+/* Basic Styling for Navbar */
+.navbar {
+    background-color: #fcfffc; /* Green background color */
+    padding: 10px 20px; /* Spacing around the navbar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Style for Navbar list */
+  .navbar ul {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center items */
+    list-style: none; /* Remove default list styling */
+    padding: -4px; /* Remove default padding */
+    margin: 0px; /* Remove default margin */
+  }
+  
+  /* Style for each Link */
+  .navbar li {
+    margin: 0 15px; /* Space between each link */
+  }
+  
+  /* Styling for Links */
+  .navbar a {
+    color: rgb(240, 162, 162); /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2rem; /* Larger text size */
+    font-weight: bold; /* Bold text */
+    padding: 10px 15px; /* Padding around text */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover Effect for Links */
+  .navbar a:hover {
+    background-color: #9a5b5b; /* Darker green on hover */
+    color: #ddb4b4; /* Keep text color white on hover */
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column; /* Stack links vertically */
+      align-items: center; /* Center the items */
+    }
+  
+    .navbar li {
+      margin: 10px 0; /* More space between links in mobile view */
+    }
+  }
+  
