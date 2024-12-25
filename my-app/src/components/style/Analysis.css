@@ -22,8 +22,7 @@
   .navbar {
     width: 100%;
     text-align: center;
-    padding: 20px 0;
-    background-color: #A7A5C6; /* Lavender color for the navbar */
+    padding: 20px 0; /* Lavender color for the navbar */
     position: fixed; /* Fixed position to make it always on top */
     top: 0;
     left: 0;
