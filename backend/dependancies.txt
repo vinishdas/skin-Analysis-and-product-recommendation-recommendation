@@ -1,7 +1,0 @@
-npm install express body-parser multer cors axios dotenv
-express: Framework for building the backend.
-body-parser: To parse incoming request bodies.
-multer: For handling image uploads.
-cors: To handle Cross-Origin Resource Sharing.
-axios: For making HTTP requests (to interact with ML models).
-dotenv: To manage environment variables.
