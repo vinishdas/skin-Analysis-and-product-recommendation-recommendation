@@ -7,7 +7,7 @@ import "./style/About.css";
 // Sample data for team members
 const teamMembers = [
   {
-    name: "Nahil Nasir",
+    name: " Nahil Nasir",
     github: "https://github.com/nahilnasir",
     email: "nahil.ai22@sahyadri.edu.in",
   },
@@ -17,7 +17,7 @@ const teamMembers = [
     email: "tapan.cs22@sahayadri.edu.in",
   },
   {
-    name: "Ahad Asif Hussain",
+    name: "Ahad  Hussain",
     github: "https://github.com/ahadhuss3in",
     email: "janesmith@example.com",
   },
@@ -34,7 +34,7 @@ const About = () => {
     <div className="about-page">
       <Navbar></Navbar>
       <header className="about-header">
-      <h1> <span style={{ color:'#71677C' }}>Our </span>goal is to Make a <span style={{ color:'#945D5E' }}>Skin care</span> app for <span style={{ color: '#DDA77B' }}>All</span> .</h1>
+      <h1> <span style={{ color:'#71677C' }}>Our </span><span style={{ color:'black' }}>goal is to Make a </span><span style={{ color:'#945D5E' }}>Skin care</span> <span style={{ color:'black' }}>app for </span><span style={{ color: '#DDA77B' }}>All</span> .</h1>
 
       </header>
       <section className="about-content">
