@@ -38,8 +38,8 @@ const Analysis = () => {
 
   return (
     <div className="analysis-container">
-      {/* Navbar positioned at the top */}
-      <Navbar />
+      <Navbar></Navbar>
+   
 
       {/* Background Container */}
       <div className="background-container"></div>
