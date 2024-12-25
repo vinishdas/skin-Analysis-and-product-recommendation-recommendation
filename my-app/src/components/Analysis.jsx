@@ -1,12 +1,17 @@
 import React, { useState } from "react";
-
-
+import "./style/Analysis.css";
+import Navbar from "./Navebar";
 const Analysis = () => {
   const [image, setImage] = useState(null);
+  const [imagePreview, setImagePreview] = useState(null);
   const [resultImage, setResultImage] = useState(null);
 
   const handleImageUpload = (e) => {
-    setImage(e.target.files[0]);
+    const file = e.target.files[0];
+    if (file) {
+      setImage(file);
+      setImagePreview(URL.createObjectURL(file));
+    }
   };
 
   const handleAnalysis = async () => {
@@ -31,17 +36,33 @@ const Analysis = () => {
   };
 
   return (
-    <div className="analysis">
-      <h1>Skin Analysis</h1>
-      <input type="file" accept="image/*" onChange={handleImageUpload} />
-      <button onClick={handleAnalysis}>Analyze Image</button>
-      {resultImage && (
-        <div>
-          <h3>Analysis Result:</h3>
-          
-          <img src={resultImage} alt="Analysis Result" />
-        </div>
-      )}
+    
+    <div className="analysis-container">
+      <Navbar></Navbar>
+      {/* Background Container */}
+      <div className="background-container"></div>
+
+      {/* Skin Analysis Content */}
+      <div className="analysis">
+        <h1>Skin Analysis</h1>
+        <input type="file" accept="image/*" onChange={handleImageUpload} />
+
+        {imagePreview && (
+          <div className="image-preview">
+            <h3>Uploaded Image:</h3>
+            <img src={imagePreview} alt="Uploaded Preview" />
+          </div>
+        )}
+
+        <button onClick={handleAnalysis}>Analyze Image</button>
+
+        {resultImage && (
+          <div className="result-image">
+            <h3>Analysis Result:</h3>
+            <img src={resultImage} alt="Analysis Result" />
+          </div>
+        )}
+      </div>
     </div>
   );
 };

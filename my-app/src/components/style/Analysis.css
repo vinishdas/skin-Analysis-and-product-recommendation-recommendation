@@ -1,0 +1,135 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFDEC; /* Soft cream background for the entire page */
+    color: #4A4A4A; /* Dark grey text color */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  
+  /* Center the container for the analysis part */
+  .analysis-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    position: relative;
+  }
+  
+  /* Main content styling */
+  .analysis {
+    background-color: #FFE2E2; /* Light pinkish background for the analysis block */
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    color: #A7A5C6; /* Muted lavender color for text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  /* Title styling */
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #A7A5C6;
+    margin-bottom: 20px;
+  }
+  
+  /* File input styling */
+  input[type="file"] {
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #A7A5C6; /* Muted lavender for input background */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  input[type="file"]:hover {
+    background-color: #8F8DB6; /* Slightly darker lavender on hover */
+  }
+  
+  input[type="file"]:focus {
+    outline: none;
+  }
+  
+  /* Image preview */
+  .image-preview img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button styling */
+  button {
+    background-color: #A7A5C6; /* Muted lavender */
+    color: #FFF;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #8F8DB6; /* Darker lavender on hover */
+  }
+  
+  button:active {
+    background-color: #6F6C82; /* Even darker lavender on active */
+  }
+  
+  /* Result image styling */
+  .result-image img {
+    max-width: 100%;
+    max-height: 350px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Mobile responsive design */
+  @media (max-width: 768px) {
+    .analysis {
+      padding: 20px;
+      max-width: 95%;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    button {
+      padding: 12px 25px;
+      font-size: 1rem;
+    }
+  
+    input[type="file"] {
+      font-size: 1rem;
+    }
+  }
+  
