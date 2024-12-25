@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style/Analysis.css";
-import Navbar from "./Navebar";
+import Navbar from "./Navebar"; // Adjust the import path if necessary
+
 const Analysis = () => {
   const [image, setImage] = useState(null);
   const [imagePreview, setImagePreview] = useState(null);
@@ -36,9 +37,10 @@ const Analysis = () => {
   };
 
   return (
-    
     <div className="analysis-container">
-      <Navbar></Navbar>
+      {/* Navbar positioned at the top */}
+      <Navbar />
+
       {/* Background Container */}
       <div className="background-container"></div>
 
